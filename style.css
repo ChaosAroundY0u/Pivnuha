@@ -1,11 +1,15 @@
 body {
+    cursor:url('jackson.png'), auto;
     font-family: "Open Sans", sans-serif;
     margin: 0 ;
 }
 
 .container {
     margin: 0px 0px;
-    background-color:#232024;
+    /* background-image: url(penka.jpg); */
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-color:#291f0c;
 }
 
 .header {
@@ -20,16 +24,15 @@ body {
     align-items: center;
 }
 .nav-item {
-    color: #fff;
+    color: #ffffff;
     text-decoration:none ;
     font-weight: 700; 
     font-size: 30px;
     margin-right: 50px;
     padding-left:5px;
-    border-right: 1px solid #FFFFFF;
+    border-right: 1px solid #ffffff;
     border-width: 2px;
     padding-right: 50px;
-    border
 }
 .cart {
     position: relative;
@@ -44,7 +47,7 @@ body {
     padding-bottom:10px ;
 }
 .nav-item1 {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-decoration:none ;
     font-weight: 700; 
     font-size: 30px;
@@ -53,4 +56,174 @@ body {
     border-right: 1px solid #FFFFFF;
     border-width: 2px;
     padding-right: 50px;
+}
+.wrapper {
+margin: 0 auto;
+position: relative;
+width: 400px;
+height: 440px;
+background: transparent;
+border: 2px solid rgba(255, 255, 255, .5);
+border-radius: 25px;
+backdrop-filter: blur(20px);
+box-shadow: 0 0 30px rgba(0, 0, 0);
+display:none;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+
+.wrapper .form-box {
+width: 100%;
+padding: 40px;
+
+}
+.wrapper .form-box.login {
+    display: none;
+}
+.wrapper .icon-close {
+position:absolute;
+top:0;
+right:0;
+width: 45px;
+height: 45px; 
+background-color:#000000c7;
+font-size:2em;
+color:#FFFFFF;
+display:flex;
+justify-content: center;
+align-items: center;
+border-bottom-left-radius: 20px;
+cursor: pointer;
+z-index: 1;
+
+}
+.x {
+    cursor:pointer;
+}
+.form-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align:center; 
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938 ;
+    margin: 30px 0;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+     
+}
+.input-box label {
+    position:absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size:1em;
+    color: z#868e94;
+    font-weight: 500;
+    pointer-events: none; 
+    transition: .5s;
+}
+.input-box input {
+width: 100%;
+height: 100%;
+background: transparent;
+border: none;
+outline: none;
+font-size: 1em;
+color: #162938;
+font-weight: 600;
+padding: 0 35px 0 5px;
+}
+
+
+.btn1{
+    width: 100%;
+    height: 45px;
+    background: #000000c7;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color:#ffffff;
+    font-weight: 500;
+     
+}
+.login-register
+{
+    font-size: .9em;
+    color: #162938;
+    font-weight:500;
+    margin: 25px 0 10px;
+    text-align: center;
+}
+.login-register p a { 
+    color:#162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover {
+    text-decoration: underline;
+} 
+
+/* В працессе */
+.header2 {
+    background-color: #291f0c;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 70px 0;
+    border: 4mm ridge rgba(78, 61, 28, 0.6);
+}
+.container2 {
+    background: rgb(69,49,35);
+    background: radial-gradient(circle, rgba(69,49,35,1) 59%, rgba(255,255,255,1) 100%);
+    position: relative;
+}
+.main {
+    background-color:#382a16;
+    
+    border-radius: 0;
+    padding: 20px;
+    width: 70%;
+    height: 190vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    
+}
+.image {
+    position: absolute;
+    top:18%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: auto;
+    border: 5px solid #000000;
+    border-radius: 3%;
+    
+    
+}
+.item {
+    
+    background-color: #ffffff; 
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    flex: 1 1 300px; 
+    box-sizing: border-box; 
+    margin:15px;
+    height: 300px;
+    border:  1px solid black;
+    
+}
+.main > .item:nth-child(-n+5) {
+    margin-top: 500px; /* Отступ сверху для первых трех элементов (первая строка) */
 }
